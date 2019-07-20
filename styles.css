@@ -1,22 +1,110 @@
+
 html, body {
   width:100%;
   height:100%;
 }
 
-body {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .everything {
-  height: 90%;
+    height: 100%;
     text-align:center;
     display:table;
     width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .startingText {
   color: rgb(120,117,127);
+}
+
+.middle {
   display:table-cell;
   vertical-align:middle;
+}
+
+.textBox {
+  width:20vw;
+  height:20vh;
+  opacity: 0.5;
+  background-color: rgb(120,117,127);
+  border-color: rgb(120,117,127);
+  text-align:center;
+  color:red;
+}
+
+.textBox:focus {
+  -webkit-animation: textBoxAnimation 3s forwards;
+  -moz-animation: textBoxAnimation 3s forwards;
+  -ms-animation: textBoxAnimation 3s forwards;
+  -o-animation: textBoxAnimation 3s forwards;
+  animation: textBoxAnimation 3s forwards;
+}
+
+
+@-webkit-keyframes textBoxAnimation {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@-moz-keyframes textBoxAnimation {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@-ms-keyframes textBoxAnimation {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@-o-keyframes textBoxAnimation {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes textBoxAnimation {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
 }
