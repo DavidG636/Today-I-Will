@@ -8,12 +8,11 @@ $(function() {
   if (parts.length == 2) {userMsg = parts.pop().split(";").shift();}
 
   if (userMsg) {
-    $('.startingText, .textBox, .submit').css('display', 'none');
-    $('.middle').append($(`<h2 style='color: rgb(120,117,127);' class='msgHeader'>${userMsg}</h2>`));
+    $('.textBox, .submit').css('display', 'none');
+    $('.middle').append($(`<h1 style='color: rgb(120,117,127);' class='msgHeader'>${userMsg}</h1>`));
   }
 
   else {
-    $('.startingText').css('display', 'block');
     $('.textBox, .submit').css('display', 'inline-block');
   }
 
