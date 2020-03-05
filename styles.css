@@ -112,4 +112,23 @@ html, body {
 .submit {
   margin-top:15px;
   width:20vw;
+  cursor:pointer;
+}
+
+.cookieConsentDiv {
+  background-image: linear-gradient(white, black);
+  margin-left:auto;
+  margin-right:auto;
+  width:20vw;
+  margin-top: 15px;
+}
+
+.cookieConsentText {
+  color:white;
+}
+
+.cookieConsentButton {
+  background-image: linear-gradient(pink, red);
+  color:white;
+  cursor:pointer;
 }
